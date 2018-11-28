@@ -1,7 +1,30 @@
 <html>
 <head>
+    <title>SW Vid Payments</title>
 </head>
 <body>
-    hello!
+    <h1>Hello!</h1>
+    <h2> Thank you for support our job</h2>
+
+    <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+        <input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_grande.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+        <input name="buttonId" type="hidden" value="p1IWRcs610kPO7dzy2jTOzV4ijm9cO2J0fk50wz35CnOg9LPt/0iag=="/>
+        <input name="merchantId" type="hidden" value="553317"/>
+        <input name="accountId" type="hidden" value="555649"/>
+        <input name="description" type="hidden" value="Sale one vid"/>
+        <input name="referenceCode" type="hidden" value="SWVID50COP"/>
+        <input name="amount" type="hidden" value="50000.00"/>
+        <input name="tax" type="hidden" value="0.00"/>
+        <input name="taxReturnBase" type="hidden" value="0.00"/>
+        <input name="shipmentValue" value="0.00" type="hidden"/>
+        <input name="currency" type="hidden" value="COP"/>
+        <input name="lng" type="hidden" value="es"/>
+        <input name="approvedResponseUrl" type="hidden" value="https://s3.amazonaws.com/sw-payments/payment-ok.html"/>
+        <input name="declinedResponseUrl" type="hidden" value="https://s3.amazonaws.com/sw-payments/payment-failed.html"/>
+        <input name="pendingResponseUrl" type="hidden" value="https://s3.amazonaws.com/sw-payments/payment-pending.html"/>
+        <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+        <input name="buttonType" value="SIMPLE" type="hidden"/>
+        <input name="signature" value="cdd55bc6ac3141da0ed3f6a9134ba4cf19a46cb058a469740a761a8d5125c604" type="hidden"/>
+    </form>
 </body>
 </html>
